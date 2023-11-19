@@ -11,6 +11,6 @@ class MarquesController extends BaseController
     {
         $marqueModel = new MarqueModel();
         $marques = $marqueModel->findAll();
-        return view('marque_view',['marques'=>$marques]);
+        return view('marque/marque_view',['marques'=>$marques]);
     }
 }
