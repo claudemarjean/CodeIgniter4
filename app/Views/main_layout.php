@@ -15,6 +15,7 @@
 
     <!-- Inclure les fichiers JS Bootstrap (placez-les à la fin du corps du document pour une meilleure performance) -->
     <script type="text/javascript" src="<?= base_url('bootstrap/js/bootstrap.min.js')?>"><</script>
+    <script type="text/javascript" src="<?= base_url('assets/js/marque/marque.js') ?>"></script>
     <!-- Vos autres scripts personnalisés peuvent être inclus ici -->
 </body>
 </html>
