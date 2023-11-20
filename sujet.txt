@@ -1,0 +1,5 @@
+Durrée: 3h
+
+1- Développer une gestion marque (affichage, ajout, modification, suppression, filtre de recherche) avec id, nom comme champs(4 points)
+2- Développer une gestion voiture lié au marque( affichage, ajout, modification; suppression, filtre de recherche) avec id, modele, prix, immatriculation, marque comme champs (4 points)
+3- ajouter un bouton export excel selon filtre de recherche dans la liste des voitures (2points)

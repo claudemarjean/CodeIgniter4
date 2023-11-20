@@ -20,7 +20,7 @@
                     <tr>
                         <td id="<?= $marque["id_marque"]?>"><?= $marque["nom"] ?></td>
                         <td>
-                            <button type="button" class="btn btn-info">Modifier</button>
+                            <button type="button" class="btn btn-info editMarque" >Modifier</button>
                             <button type="button" class="btn btn-danger">Supprimer</button>
                         </td>
                     </tr>
@@ -42,11 +42,12 @@
             <div class="modal-body">
             <div class="input-group mb-3">
                 <span class="input-group-text">Nom de marque</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control" id="nomMarque">
             </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Ajouter</button>
+                <button type="button" class="btn btn-primary" id="buttonAddMarque">Ajouter</button>
+                <button type="button" class="btn btn-primary" id="buttonModifMarque">Modifier</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
             </div>

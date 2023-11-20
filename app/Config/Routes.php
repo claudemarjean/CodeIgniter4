@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/hi', 'HomeControlleur::index');
 $routes->get('/marque', 'MarquesController::index');
+$routes->post('/addMarque','AddMarquesController::index');
