@@ -7,10 +7,14 @@ use App\Models\MarqueModel;
 
 class MarquesController extends BaseController
 {
+
+    public function __construct(){
+        $this->marqueModel = new MarqueModel();
+    }
+
     public function listeDesMarques()
     {
-        $marqueModel = new MarqueModel();
-        $marques = $marqueModel->findAll();
+        $marques = $this->marqueModel->findAll();
         return view('marque/marque_view',['marques'=>$marques]);
     }
     
@@ -20,14 +24,18 @@ class MarquesController extends BaseController
 
     public function addMarque(){
         $nomMarque = $this->request->getPost('nomMarque');
-        $marqueModel = new MarqueModel();
 
         $data = [
             'nom'=> $nomMarque
         ];
 
-        $marqueModel->insert($data);
+        $this->marqueModel->insert($data);
 
+        return redirect()->to('/marques');
+    }
+
+    public function deleteMarque($id){
+        $this->marqueModel->delete($id);
         return redirect()->to('/marques');
     }
 }

@@ -20,8 +20,8 @@
                     <tr>
                         <td id="<?= $marque["id_marque"]?>"><?= $marque["nom"] ?></td>
                         <td>
-                            <button type="button" class="btn btn-info editMarque" >Modifier</button>
-                            <button type="button" class="btn btn-danger">Supprimer</button>
+                            <a href="" class="btn btn-info " >Modifier</a>
+                            <a href="<?= '/marques/delete/'.$marque["id_marque"]?>" class="btn btn-danger">Supprimer</a>
                         </td>
                     </tr>
                 <?php }?>
