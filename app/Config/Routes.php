@@ -7,5 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/hi', 'HomeControlleur::index');
-$routes->get('/marque', 'MarquesController::index');
-$routes->post('/addMarque','AddMarquesController::index');
+$routes->get('/marques', 'MarquesController::listeDesMarques');
+$routes->get('/marques/ajout','MarquesController::obtenirFormulaireAjout');
+$routes->post('/marques/ajout','MarquesController::addMarque');

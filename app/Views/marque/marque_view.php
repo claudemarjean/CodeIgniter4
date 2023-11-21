@@ -5,7 +5,7 @@
     <div class="container">
         <div class="container d-flex">
             <h1 class="me-auto">Liste des marques</h1>
-            <button type="button" id="addMarque"  class="btn btn-primary ms-auto">Ajouter</button>
+            <a href="/marques/ajout" class="btn btn-primary ms-auto">Ajouter</a>
         </div>
        
         <table class="table table-hover">
