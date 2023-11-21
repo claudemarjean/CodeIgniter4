@@ -10,7 +10,7 @@
                     <input type="text" class="form-control" name="nomMarque">
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Soumettre</font></font></button>
+                    <button type="submit" class="btn btn-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ajouter</font></font></button>
                 </div>
             </div>
         </form>
